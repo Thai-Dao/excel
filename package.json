@@ -1,0 +1,16 @@
+{
+  "name": "excel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "calculate.js",
+  "dependencies": {
+    "js-yaml": "^4.1.0",
+    "xlsx": "^0.17.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
