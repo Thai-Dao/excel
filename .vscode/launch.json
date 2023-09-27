@@ -28,6 +28,50 @@
                 "<node_internals>/**"
             ],
             "program": "${workspaceFolder}/main.js"
-        }
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "export-data",
+            "args": [
+                "export-data",
+                "--f=./dataMap/Migration Planning.xlsx",
+                "--s=VMs_MigrationConfig",
+                "--j=current_list",
+                "--c=Name",
+            ],
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/main.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "merge-data",
+            "args": [
+                "merge-data",
+                "--oa=./VMlist_export/list1.json",
+                "--ob=./VMlist_export/list2.json"
+            ],
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/main.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "compare-data",
+            "args": [
+                "compare-data",
+                "--f1=./VMlist_export/current_list.json",
+                "--f2=./VMlist_export/merged_list.json"
+            ],
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/main.js"
+        },
     ]
 }

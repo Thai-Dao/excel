@@ -44,4 +44,5 @@ terraform.rc
 *.xlsx
 
 **/report_*
-
+**/dataMap/*
+**/VMlist_export/*
